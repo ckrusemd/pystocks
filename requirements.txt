@@ -1,0 +1,12 @@
+jupyter-book
+matplotlib
+numpy
+ghp-import
+fredapi
+pandas
+pandas-datareader
+plotly
+fbprophet
+numpy
+python-dotenv
+pandas

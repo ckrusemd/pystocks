@@ -1,0 +1,12 @@
+title                       : PyStocks  # The title of the book. Will be placed in the left navbar.
+author                      : Christian Kruse  # The author of the book
+copyright                   : "2021"  # Copyright year to be placed in the footer
+logo                        : logo.png  # A path to the book logo
+only_build_toc_files        : false
+execute:
+  allow_errors              : true # If `False`, when a code cell raises an error the execution is stopped, otherwise all cells are always run.
+  stderr_output             : remove  # One of 'show', 'remove', 'remove-warn', 'warn', 'error', 'severe'
+  execute_notebooks         : force  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+  timeout: -1
+repository:
+  url                       : https://github.com/ckrusemd/pystocks  # The URL to your book's repository

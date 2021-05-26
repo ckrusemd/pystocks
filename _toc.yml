@@ -1,0 +1,7 @@
+- file: pystocks/intro.ipynb
+- part: FredAPI
+  chapters:
+  - file: pystocks/stocks/AAPL.ipynb
+  - file: pystocks/stocks/MSFT.ipynb
+  - file: pystocks/stocks/AMZN.ipynb
+  - file: pystocks/stocks/FB.ipynb
