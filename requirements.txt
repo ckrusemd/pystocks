@@ -10,3 +10,6 @@ fbprophet
 numpy
 python-dotenv
 pandas
+shap
+keras-tqdm
+tensorflow_datasets
