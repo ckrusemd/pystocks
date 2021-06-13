@@ -37,5 +37,7 @@ print( IPython.sys_info() )
 # :caption: FB Prophet
 # 
 # stocks/fbprophet/AAPL.ipynb
+# stocks/fbprophet/MSFT.ipynb
+# stocks/fbprophet/AMZN.ipynb
 # ```
 # 
