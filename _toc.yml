@@ -2,14 +2,14 @@
 - part: FB Prophet
   chapters:
   - file: pystocks/stocks/fbprophet/AAPL.ipynb
-  - file: pystocks/stocks/fbprophet/MSFT.ipynb
-  - file: pystocks/stocks/fbprophet/AMZN.ipynb
-  - file: pystocks/stocks/fbprophet/GOOG.ipynb
-  - file: pystocks/stocks/fbprophet/GOOGL.ipynb
-  - file: pystocks/stocks/fbprophet/FB.ipynb
-  - file: pystocks/stocks/fbprophet/TSM.ipynb
-  - file: pystocks/stocks/fbprophet/TSLA.ipynb
-  - file: pystocks/stocks/fbprophet/BABA.ipynb
+#  - file: pystocks/stocks/fbprophet/MSFT.ipynb
+#  - file: pystocks/stocks/fbprophet/AMZN.ipynb
+#  - file: pystocks/stocks/fbprophet/GOOG.ipynb
+#  - file: pystocks/stocks/fbprophet/GOOGL.ipynb
+#  - file: pystocks/stocks/fbprophet/FB.ipynb
+#  - file: pystocks/stocks/fbprophet/TSM.ipynb
+#  - file: pystocks/stocks/fbprophet/TSLA.ipynb
+#  - file: pystocks/stocks/fbprophet/BABA.ipynb
 #- part: Methods
 #  chapters:
 #  - file: pystocks/stocks/methods/LSTM.ipynb

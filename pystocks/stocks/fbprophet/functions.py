@@ -16,6 +16,37 @@ from matplotlib.dates import (
 from matplotlib.ticker import FuncFormatter
 from datetime import datetime
 from pandas_datareader.data import DataReader
+import os
+import sys
+
+class suppress_stdout_stderr(object):
+    '''
+    A context manager for doing a "deep suppression" of stdout and stderr in
+    Python, i.e. will suppress all print, even if the print originates in a
+    compiled C/Fortran sub-function.
+       This will not suppress raised exceptions, since exceptions are printed
+    to stderr just before a script exits, and after the context manager has
+    exited (at least, I think that is why it lets exceptions through).
+
+    '''
+    def __init__(self):
+        # Open a pair of null files
+        self.null_fds = [os.open(os.devnull, os.O_RDWR) for x in range(2)]
+        # Save the actual stdout (1) and stderr (2) file descriptors.
+        self.save_fds = (os.dup(1), os.dup(2))
+
+    def __enter__(self):
+        # Assign the null pointers to stdout and stderr.
+        os.dup2(self.null_fds[0], 1)
+        os.dup2(self.null_fds[1], 2)
+
+    def __exit__(self, *_):
+        # Re-assign the real stdout/stderr back to (1) and (2)
+        os.dup2(self.save_fds[0], 1)
+        os.dup2(self.save_fds[1], 2)
+        # Close the null files
+        os.close(self.null_fds[0])
+        os.close(self.null_fds[1])
 
 def subtract_one_month(timestamp):
     import datetime
@@ -29,6 +60,10 @@ def collect_tune_and_predict(item,n_ahead = 365):
     param_grid =    {  
             'changepoint_prior_scale': [0.001, 0.01, 0.1, 0.5, 1],
             'seasonality_prior_scale': [0.01, 0.1, 1.0, 10.0, 20.0]
+                        }
+    param_grid =    {  
+            'changepoint_prior_scale': [1],
+            'seasonality_prior_scale': [1.0]
                         }
     # Get Data
     data = DataReader(item,  "yahoo", datetime(1900,1,1), datetime.now())
@@ -45,10 +80,11 @@ def collect_tune_and_predict(item,n_ahead = 365):
     latest_date = data.tail(1).iloc[0]['ds']
     cutoffs = [ subtract_one_month( latest_date ) ]
     for params in all_params:
-        m = Prophet(**params).fit(data)  # Fit model with given params
-        df_cv = cross_validation(m, cutoffs=cutoffs, horizon='30 days', parallel="processes")
-        df_p = performance_metrics(df_cv, rolling_window=1)
-        rmses.append(df_p['rmse'].values[0])
+        with suppress_stdout_stderr():
+            m = Prophet(**params).fit(data)  # Fit model with given params
+            df_cv = cross_validation(m, cutoffs=cutoffs, horizon='30 days', parallel="processes")
+            df_p = performance_metrics(df_cv, rolling_window=1)
+            rmses.append(df_p['rmse'].values[0])
 
     # Rolling windows
     # Find the best parameters
@@ -59,7 +95,8 @@ def collect_tune_and_predict(item,n_ahead = 365):
 
     # Python
     m = Prophet(**best_params)
-    m.fit(data)
+    with suppress_stdout_stderr():
+        m.fit(data)
 
     best_params['rmse'] = min( rmses )
     print(best_params)
