@@ -39,5 +39,11 @@ print( IPython.sys_info() )
 # stocks/fbprophet/AAPL.ipynb
 # stocks/fbprophet/MSFT.ipynb
 # stocks/fbprophet/AMZN.ipynb
+# stocks/fbprophet/GOOG.ipynb
+# stocks/fbprophet/GOOGL.ipynb
+# stocks/fbprophet/FB.ipynb
+# stocks/fbprophet/TSM.ipynb
+# stocks/fbprophet/TSLA.ipynb
+# stocks/fbprophet/BABA.ipynb
 # ```
 # 
