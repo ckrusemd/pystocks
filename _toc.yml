@@ -1,55 +1,102 @@
 - file: pystocks/intro.ipynb
-- part: FB Prophet
+- part: Basic Industries
+  chapters:
+  - file: pystocks/stocks/fbprophet/BHP.ipynb
+  - file: pystocks/stocks/fbprophet/LIN.ipynb
+  - file: pystocks/stocks/fbprophet/RIO.ipynb
+  - file: pystocks/stocks/fbprophet/VALE.ipynb
+  - file: pystocks/stocks/fbprophet/SHW.ipynb
+- part: Capital Goods
+  chapters:
+  - file: pystocks/stocks/fbprophet/TSLA.ipynb
+  - file: pystocks/stocks/fbprophet/TM.ipynb
+  - file: pystocks/stocks/fbprophet/TMO.ipynb
+  - file: pystocks/stocks/fbprophet/HON.ipynb
+  - file: pystocks/stocks/fbprophet/BA.ipynb
+- part: Consumer Durables
+  chapters:
+  - file: pystocks/stocks/fbprophet/CSAN.ipynb
+  - file: pystocks/stocks/fbprophet/GE.ipynb
+  - file: pystocks/stocks/fbprophet/ABB.ipynb
+  - file: pystocks/stocks/fbprophet/AME.ipynb
+  - file: pystocks/stocks/fbprophet/FERG.ipynb
+- part: Consumer Non-Durables
+  chapters:
+  - file: pystocks/stocks/fbprophet/PG.ipynb
+  - file: pystocks/stocks/fbprophet/KO.ipynb
+  - file: pystocks/stocks/fbprophet/NKE.ipynb
+  - file: pystocks/stocks/fbprophet/PEP.ipynb
+  - file: pystocks/stocks/fbprophet/UL.ipynb
+- part: Consumer Services
+  chapters:
+  - file: pystocks/stocks/fbprophet/AMZN.ipynb
+  - file: pystocks/stocks/fbprophet/BABA.ipynb
+  - file: pystocks/stocks/fbprophet/WMT.ipynb
+  - file: pystocks/stocks/fbprophet/HD.ipynb
+  - file: pystocks/stocks/fbprophet/DIS.ipynb
+  - file: pystocks/stocks/fbprophet/CMCSA.ipynb
+  - file: pystocks/stocks/fbprophet/NFLX.ipynb
+  - file: pystocks/stocks/fbprophet/T.ipynb
+- part: Energy
+  chapters:
+  - file: pystocks/stocks/fbprophet/XOM.ipynb
+  - file: pystocks/stocks/fbprophet/CVX.ipynb
+  - file: pystocks/stocks/fbprophet/BBL.ipynb
+  - file: pystocks/stocks/fbprophet/TOT.ipynb
+  - file: pystocks/stocks/fbprophet/BP.ipynb
+- part: Finance
+  chapters:
+  - file: pystocks/stocks/fbprophet/JPM.ipynb
+  - file: pystocks/stocks/fbprophet/BAC.ipynb
+  - file: pystocks/stocks/fbprophet/WFC.ipynb
+  - file: pystocks/stocks/fbprophet/MS.ipynb
+  - file: pystocks/stocks/fbprophet/C.ipynb
+- part: Health Care
+  chapters:
+  - file: pystocks/stocks/fbprophet/JNJ.ipynb
+  - file: pystocks/stocks/fbprophet/UNH.ipynb
+  - file: pystocks/stocks/fbprophet/PFE.ipynb
+  - file: pystocks/stocks/fbprophet/ABT.ipynb
+  - file: pystocks/stocks/fbprophet/ABBV.ipynb
+  - file: pystocks/stocks/fbprophet/NVS.ipynb
+  - file: pystocks/stocks/fbprophet/MRK.ipynb
+  - file: pystocks/stocks/fbprophet/LLY.ipynb
+  - file: pystocks/stocks/fbprophet/DHR.ipynb
+  - file: pystocks/stocks/fbprophet/NVO.ipynb
+- part: Miscellaneous
+  chapters:
+  - file: pystocks/stocks/fbprophet/V.ipynb
+  - file: pystocks/stocks/fbprophet/MA.ipynb
+  - file: pystocks/stocks/fbprophet/PYPL.ipynb
+  - file: pystocks/stocks/fbprophet/EDU.ipynb
+  - file: pystocks/stocks/fbprophet/PDD.ipynb
+- part: Public Utilities
+  chapters:
+  - file: pystocks/stocks/fbprophet/TMUS.ipynb
+  - file: pystocks/stocks/fbprophet/NEE.ipynb
+  - file: pystocks/stocks/fbprophet/DUK.ipynb
+  - file: pystocks/stocks/fbprophet/SO.ipynb
+  - file: pystocks/stocks/fbprophet/D.ipynb
+- part: Technology
   chapters:
   - file: pystocks/stocks/fbprophet/AAPL.ipynb
   - file: pystocks/stocks/fbprophet/MSFT.ipynb
-  - file: pystocks/stocks/fbprophet/AMZN.ipynb
   - file: pystocks/stocks/fbprophet/GOOG.ipynb
   - file: pystocks/stocks/fbprophet/GOOGL.ipynb
   - file: pystocks/stocks/fbprophet/FB.ipynb
   - file: pystocks/stocks/fbprophet/TSM.ipynb
-  - file: pystocks/stocks/fbprophet/TSLA.ipynb
-  - file: pystocks/stocks/fbprophet/BABA.ipynb
-  - file: pystocks/stocks/fbprophet/JPM.ipynb
-  - file: pystocks/stocks/fbprophet/V.ipynb
-  - file: pystocks/stocks/fbprophet/JNJ.ipynb
   - file: pystocks/stocks/fbprophet/NVDA.ipynb
-  - file: pystocks/stocks/fbprophet/WMT.ipynb
-  - file: pystocks/stocks/fbprophet/UNH.ipynb
-  - file: pystocks/stocks/fbprophet/BAC.ipynb
-  - file: pystocks/stocks/fbprophet/MA.ipynb
-  - file: pystocks/stocks/fbprophet/HD.ipynb
-  - file: pystocks/stocks/fbprophet/PG.ipynb
-  - file: pystocks/stocks/fbprophet/DIS.ipynb
-  - file: pystocks/stocks/fbprophet/PYPL.ipynb
   - file: pystocks/stocks/fbprophet/ASML.ipynb
-  - file: pystocks/stocks/fbprophet/CMCSA.ipynb
-  - file: pystocks/stocks/fbprophet/XOM.ipynb
   - file: pystocks/stocks/fbprophet/ADBE.ipynb
-  - file: pystocks/stocks/fbprophet/KO.ipynb
-  - file: pystocks/stocks/fbprophet/TM.ipynb
   - file: pystocks/stocks/fbprophet/INTC.ipynb
   - file: pystocks/stocks/fbprophet/ORCL.ipynb
   - file: pystocks/stocks/fbprophet/CSCO.ipynb
-  - file: pystocks/stocks/fbprophet/NFLX.ipynb
   - file: pystocks/stocks/fbprophet/CRM.ipynb
-  - file: pystocks/stocks/fbprophet/PFE.ipynb
-  - file: pystocks/stocks/fbprophet/NKE.ipynb
-  - file: pystocks/stocks/fbprophet/T.ipynb
-  - file: pystocks/stocks/fbprophet/ABT.ipynb
-  - file: pystocks/stocks/fbprophet/PEP.ipynb
-  - file: pystocks/stocks/fbprophet/CVX.ipynb
-  - file: pystocks/stocks/fbprophet/ABBV.ipynb
-  - file: pystocks/stocks/fbprophet/NVS.ipynb
-  - file: pystocks/stocks/fbprophet/WFC.ipynb
   - file: pystocks/stocks/fbprophet/AVGO.ipynb
-  - file: pystocks/stocks/fbprophet/MRK.ipynb
-  - file: pystocks/stocks/fbprophet/LLY.ipynb
-  - file: pystocks/stocks/fbprophet/BHP.ipynb
+- part: Transportation
+  chapters:
   - file: pystocks/stocks/fbprophet/UPS.ipynb
-  - file: pystocks/stocks/fbprophet/TMO.ipynb
-  - file: pystocks/stocks/fbprophet/DHR.ipynb
-  - file: pystocks/stocks/fbprophet/NVO.ipynb
-#- part: Methods
-#  chapters:
-#  - file: pystocks/stocks/methods/LSTM.ipynb
+  - file: pystocks/stocks/fbprophet/UNP.ipynb
+  - file: pystocks/stocks/fbprophet/BKNG.ipynb
+  - file: pystocks/stocks/fbprophet/FDX.ipynb
+  - file: pystocks/stocks/fbprophet/CSX.ipynb
