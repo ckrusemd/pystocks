@@ -1,0 +1,944 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(MCD): McDonald’s Corporation Common Stock &#8212; PyStocks</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="(COST): Costco Wholesale Corporation Common Stock" href="COST.html" />
+    <link rel="prev" title="(T): AT&amp;T Inc." href="T.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">PyStocks</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   PyStocks
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Basic Industries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="BHP.html">
+   (BHP): BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="LIN.html">
+   (LIN): Linde plc Ordinary Share
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="RIO.html">
+   (RIO): Rio Tinto Plc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="VALE.html">
+   (VALE): VALE S.A.  American Depositary Shares Each Representing one common share
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SHW.html">
+   (SHW): Sherwin-Williams Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="APD.html">
+   (APD): Air Products and Chemicals Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="FCX.html">
+   (FCX): Freeport-McMoRan Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="NEM.html">
+   (NEM): Newmont Corporation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SCCO.html">
+   (SCCO): Southern Copper Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DOW.html">
+   (DOW): Dow Inc. Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Capital Goods
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="TSLA.html">
+   (TSLA): Tesla Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TM.html">
+   (TM): Toyota Motor Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TMO.html">
+   (TMO): Thermo Fisher Scientific Inc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HON.html">
+   (HON): Honeywell International Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BA.html">
+   (BA): Boeing Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="RTX.html">
+   (RTX): Raytheon Technologies Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CAT.html">
+   (CAT): Caterpillar Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AMAT.html">
+   (AMAT): Applied Materials Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DE.html">
+   (DE): Deere &amp; Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="LMT.html">
+   (LMT): Lockheed Martin Corporation Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Consumer Durables
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="CSAN.html">
+   (CSAN): Cosan S.A. ADS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GE.html">
+   (GE): General Electric Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ABB.html">
+   (ABB): ABB Ltd Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AME.html">
+   (AME): AMETEK Inc.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="FERG.html">
+   (FERG): Ferguson plc Ordinary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BLL.html">
+   (BLL): Ball Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CLX.html">
+   (CLX): Clorox Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GNRC.html">
+   (GNRC): Generac Holdlings Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="VTRS.html">
+   (VTRS): Viatris Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PLUG.html">
+   (PLUG): Plug Power Inc. Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Consumer Non-Durables
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="PG.html">
+   (PG): Procter &amp; Gamble Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="KO.html">
+   (KO): Coca-Cola Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="NKE.html">
+   (NKE): Nike Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PEP.html">
+   (PEP): PepsiCo Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="UL.html">
+   (UL): Unilever PLC Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PM.html">
+   (PM): Philip Morris International Inc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BUD.html">
+   (BUD): Anheuser-Busch Inbev SA Sponsored ADR (Belgium)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SONY.html">
+   (SONY): Sony Group Corporation American Depositary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DEO.html">
+   (DEO): Diageo plc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="EL.html">
+   (EL): Estee Lauder Companies Inc. (The) Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Consumer Services
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AMZN.html">
+   (AMZN): Amazon.com Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BABA.html">
+   (BABA): Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="WMT.html">
+   (WMT): Walmart Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HD.html">
+   (HD): Home Depot Inc. (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DIS.html">
+   (DIS): Walt Disney Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CMCSA.html">
+   (CMCSA): Comcast Corporation Class A Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="NFLX.html">
+   (NFLX): Netflix Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="T.html">
+   (T): AT&amp;T Inc.
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   (MCD): McDonald’s Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="COST.html">
+   (COST): Costco Wholesale Corporation Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Energy
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="XOM.html">
+   (XOM): Exxon Mobil Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CVX.html">
+   (CVX): Chevron Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BBL.html">
+   (BBL): BHP Group PlcSponsored ADR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TOT.html">
+   (TOT): Total SE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BP.html">
+   (BP): BP p.l.c. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ENB.html">
+   (ENB): Enbridge Inc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PTR.html">
+   (PTR): PetroChina Company Limited Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="COP.html">
+   (COP): ConocoPhillips Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="EQNR.html">
+   (EQNR): Equinor ASA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PBR.html">
+   (PBR): Petroleo Brasileiro S.A.- Petrobras Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Finance
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="JPM.html">
+   (JPM): JP Morgan Chase &amp; Co. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BAC.html">
+   (BAC): Bank of America Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="WFC.html">
+   (WFC): Wells Fargo &amp; Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="MS.html">
+   (MS): Morgan Stanley Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="C.html">
+   (C): Citigroup Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HDB.html">
+   (HDB): HDFC Bank Limited Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SCHW.html">
+   (SCHW): Charles Schwab Corporation (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BLK.html">
+   (BLK): BlackRock Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HSBC.html">
+   (HSBC): HSBC Holdings plc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AXP.html">
+   (AXP): American Express Company Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Health Care
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="JNJ.html">
+   (JNJ): Johnson &amp; Johnson Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="UNH.html">
+   (UNH): UnitedHealth Group Incorporated Common Stock (DE)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PFE.html">
+   (PFE): Pfizer Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ABT.html">
+   (ABT): Abbott Laboratories Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ABBV.html">
+   (ABBV): AbbVie Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="NVS.html">
+   (NVS): Novartis AG Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="MRK.html">
+   (MRK): Merck &amp; Company Inc. Common Stock (new)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="LLY.html">
+   (LLY): Eli Lilly and Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DHR.html">
+   (DHR): Danaher Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="NVO.html">
+   (NVO): Novo Nordisk A/S Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Miscellaneous
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="V.html">
+   (V): Visa Inc.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="MA.html">
+   (MA): Mastercard Incorporated Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PYPL.html">
+   (PYPL): PayPal Holdings Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="EDU.html">
+   (EDU): New Oriental Education &amp; Technology Group Inc. Sponsored ADR representing 1 Ordinary Share (Cayman Islands)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PDD.html">
+   (PDD): Pinduoduo Inc. American Depositary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="JD.html">
+   (JD): JD.com Inc. American Depositary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="FIS.html">
+   (FIS): Fidelity National Information Services Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ADP.html">
+   (ADP): Automatic Data Processing Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BAM.html">
+   (BAM): Brookfield Asset Management Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="NTES.html">
+   (NTES): NetEase Inc. American Depositary Shares
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Public Utilities
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="TMUS.html">
+   (TMUS): T-Mobile US Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="NEE.html">
+   (NEE): NextEra Energy Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DUK.html">
+   (DUK): Duke Energy Corporation (Holding Company) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SO.html">
+   (SO): Southern Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D.html">
+   (D): Dominion Energy Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="WM.html">
+   (WM): Waste Management Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="VOD.html">
+   (VOD): Vodafone Group Plc American Depositary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="EPD.html">
+   (EPD): Enterprise Products Partners L.P. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AMX.html">
+   (AMX): America Movil S.A.B. de C.V. American Depository Receipt Series L
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AMOV.html">
+   (AMOV): America Movil S.A.B. de C.V. Class A American Depositary Shares
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Technology
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AAPL.html">
+   (AAPL): Apple Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="MSFT.html">
+   (MSFT): Microsoft Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GOOG.html">
+   (GOOG): Alphabet Inc. Class C Capital Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GOOGL.html">
+   (GOOGL): Alphabet Inc. Class A Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="FB.html">
+   (FB): Facebook Inc. Class A Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TSM.html">
+   (TSM): Taiwan Semiconductor Manufacturing Company Ltd.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="NVDA.html">
+   (NVDA): NVIDIA Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ASML.html">
+   (ASML): ASML Holding N.V. New York Registry Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ADBE.html">
+   (ADBE): Adobe Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="INTC.html">
+   (INTC): Intel Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ORCL.html">
+   (ORCL): Oracle Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CSCO.html">
+   (CSCO): Cisco Systems Inc. Common Stock (DE)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CRM.html">
+   (CRM): Salesforce.com Inc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AVGO.html">
+   (AVGO): Broadcom Inc. Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Transportation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="UPS.html">
+   (UPS): United Parcel Service Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="UNP.html">
+   (UNP): Union Pacific Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BKNG.html">
+   (BKNG): Booking Holdings Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="FDX.html">
+   (FDX): FedEx Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CSX.html">
+   (CSX): CSX Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="NSC.html">
+   (NSC): Norfolk Southern Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="LUV.html">
+   (LUV): Southwest Airlines Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ODFL.html">
+   (ODFL): Old Dominion Freight Line Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DAL.html">
+   (DAL): Delta Air Lines Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="KSU.html">
+   (KSU): Kansas City Southern Common Stock
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/pystocks/stocks/fbprophet/MCD.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="mcd-mcdonald-s-corporation-common-stock">
+<h1>(MCD): McDonald’s Corporation Common Stock<a class="headerlink" href="#mcd-mcdonald-s-corporation-common-stock" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="kn">from</span> <span class="nn">functions</span> <span class="kn">import</span> <span class="o">*</span>
+    <span class="n">collect_tune_and_predict</span><span class="p">(</span><span class="s1">&#39;MCD&#39;</span><span class="p">,</span><span class="n">n_ahead</span> <span class="o">=</span> <span class="mi">365</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;changepoint_prior_scale&#39;: 1, &#39;seasonality_prior_scale&#39;: 1.0, &#39;rmse&#39;: 26.707389095474174}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;fig1&#39;: &lt;Figure size 720x432 with 1 Axes&gt;,
+ &#39;fig2&#39;: &lt;Figure size 648x648 with 3 Axes&gt;,
+ &#39;fig3&#39;: &lt;Figure size 720x432 with 1 Axes&gt;}
+</pre></div>
+</div>
+<img alt="../../../_images/MCD_1_5.png" src="../../../_images/MCD_1_5.png" />
+<img alt="../../../_images/MCD_1_6.png" src="../../../_images/MCD_1_6.png" />
+<img alt="../../../_images/MCD_1_7.png" src="../../../_images/MCD_1_7.png" />
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./pystocks/stocks/fbprophet"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="T.html" title="previous page">(T): AT&amp;T Inc.</a>
+    <a class='right-next' id="next-link" href="COST.html" title="next page">(COST): Costco Wholesale Corporation Common Stock</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Christian Kruse<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

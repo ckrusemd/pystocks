@@ -6,6 +6,11 @@
   - file: pystocks/stocks/fbprophet/RIO.ipynb
   - file: pystocks/stocks/fbprophet/VALE.ipynb
   - file: pystocks/stocks/fbprophet/SHW.ipynb
+  - file: pystocks/stocks/fbprophet/APD.ipynb
+  - file: pystocks/stocks/fbprophet/FCX.ipynb
+  - file: pystocks/stocks/fbprophet/NEM.ipynb
+  - file: pystocks/stocks/fbprophet/SCCO.ipynb
+  - file: pystocks/stocks/fbprophet/DOW.ipynb
 - part: Capital Goods
   chapters:
   - file: pystocks/stocks/fbprophet/TSLA.ipynb
@@ -13,6 +18,11 @@
   - file: pystocks/stocks/fbprophet/TMO.ipynb
   - file: pystocks/stocks/fbprophet/HON.ipynb
   - file: pystocks/stocks/fbprophet/BA.ipynb
+  - file: pystocks/stocks/fbprophet/RTX.ipynb
+  - file: pystocks/stocks/fbprophet/CAT.ipynb
+  - file: pystocks/stocks/fbprophet/AMAT.ipynb
+  - file: pystocks/stocks/fbprophet/DE.ipynb
+  - file: pystocks/stocks/fbprophet/LMT.ipynb
 - part: Consumer Durables
   chapters:
   - file: pystocks/stocks/fbprophet/CSAN.ipynb
@@ -20,6 +30,11 @@
   - file: pystocks/stocks/fbprophet/ABB.ipynb
   - file: pystocks/stocks/fbprophet/AME.ipynb
   - file: pystocks/stocks/fbprophet/FERG.ipynb
+  - file: pystocks/stocks/fbprophet/BLL.ipynb
+  - file: pystocks/stocks/fbprophet/CLX.ipynb
+  - file: pystocks/stocks/fbprophet/GNRC.ipynb
+  - file: pystocks/stocks/fbprophet/VTRS.ipynb
+  - file: pystocks/stocks/fbprophet/PLUG.ipynb
 - part: Consumer Non-Durables
   chapters:
   - file: pystocks/stocks/fbprophet/PG.ipynb
@@ -27,6 +42,11 @@
   - file: pystocks/stocks/fbprophet/NKE.ipynb
   - file: pystocks/stocks/fbprophet/PEP.ipynb
   - file: pystocks/stocks/fbprophet/UL.ipynb
+  - file: pystocks/stocks/fbprophet/PM.ipynb
+  - file: pystocks/stocks/fbprophet/BUD.ipynb
+  - file: pystocks/stocks/fbprophet/SONY.ipynb
+  - file: pystocks/stocks/fbprophet/DEO.ipynb
+  - file: pystocks/stocks/fbprophet/EL.ipynb
 - part: Consumer Services
   chapters:
   - file: pystocks/stocks/fbprophet/AMZN.ipynb
@@ -37,6 +57,8 @@
   - file: pystocks/stocks/fbprophet/CMCSA.ipynb
   - file: pystocks/stocks/fbprophet/NFLX.ipynb
   - file: pystocks/stocks/fbprophet/T.ipynb
+  - file: pystocks/stocks/fbprophet/MCD.ipynb
+  - file: pystocks/stocks/fbprophet/COST.ipynb
 - part: Energy
   chapters:
   - file: pystocks/stocks/fbprophet/XOM.ipynb
@@ -44,6 +66,11 @@
   - file: pystocks/stocks/fbprophet/BBL.ipynb
   - file: pystocks/stocks/fbprophet/TOT.ipynb
   - file: pystocks/stocks/fbprophet/BP.ipynb
+  - file: pystocks/stocks/fbprophet/ENB.ipynb
+  - file: pystocks/stocks/fbprophet/PTR.ipynb
+  - file: pystocks/stocks/fbprophet/COP.ipynb
+  - file: pystocks/stocks/fbprophet/EQNR.ipynb
+  - file: pystocks/stocks/fbprophet/PBR.ipynb
 - part: Finance
   chapters:
   - file: pystocks/stocks/fbprophet/JPM.ipynb
@@ -51,6 +78,11 @@
   - file: pystocks/stocks/fbprophet/WFC.ipynb
   - file: pystocks/stocks/fbprophet/MS.ipynb
   - file: pystocks/stocks/fbprophet/C.ipynb
+  - file: pystocks/stocks/fbprophet/HDB.ipynb
+  - file: pystocks/stocks/fbprophet/SCHW.ipynb
+  - file: pystocks/stocks/fbprophet/BLK.ipynb
+  - file: pystocks/stocks/fbprophet/HSBC.ipynb
+  - file: pystocks/stocks/fbprophet/AXP.ipynb
 - part: Health Care
   chapters:
   - file: pystocks/stocks/fbprophet/JNJ.ipynb
@@ -70,6 +102,11 @@
   - file: pystocks/stocks/fbprophet/PYPL.ipynb
   - file: pystocks/stocks/fbprophet/EDU.ipynb
   - file: pystocks/stocks/fbprophet/PDD.ipynb
+  - file: pystocks/stocks/fbprophet/JD.ipynb
+  - file: pystocks/stocks/fbprophet/FIS.ipynb
+  - file: pystocks/stocks/fbprophet/ADP.ipynb
+  - file: pystocks/stocks/fbprophet/BAM.ipynb
+  - file: pystocks/stocks/fbprophet/NTES.ipynb
 - part: Public Utilities
   chapters:
   - file: pystocks/stocks/fbprophet/TMUS.ipynb
@@ -77,6 +114,11 @@
   - file: pystocks/stocks/fbprophet/DUK.ipynb
   - file: pystocks/stocks/fbprophet/SO.ipynb
   - file: pystocks/stocks/fbprophet/D.ipynb
+  - file: pystocks/stocks/fbprophet/WM.ipynb
+  - file: pystocks/stocks/fbprophet/VOD.ipynb
+  - file: pystocks/stocks/fbprophet/EPD.ipynb
+  - file: pystocks/stocks/fbprophet/AMX.ipynb
+  - file: pystocks/stocks/fbprophet/AMOV.ipynb
 - part: Technology
   chapters:
   - file: pystocks/stocks/fbprophet/AAPL.ipynb
@@ -100,3 +142,8 @@
   - file: pystocks/stocks/fbprophet/BKNG.ipynb
   - file: pystocks/stocks/fbprophet/FDX.ipynb
   - file: pystocks/stocks/fbprophet/CSX.ipynb
+  - file: pystocks/stocks/fbprophet/NSC.ipynb
+  - file: pystocks/stocks/fbprophet/LUV.ipynb
+  - file: pystocks/stocks/fbprophet/ODFL.ipynb
+  - file: pystocks/stocks/fbprophet/DAL.ipynb
+  - file: pystocks/stocks/fbprophet/KSU.ipynb

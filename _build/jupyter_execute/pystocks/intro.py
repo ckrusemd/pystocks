@@ -41,6 +41,11 @@ print( IPython.sys_info() )
 # stocks/fbprophet/RIO.ipynb
 # stocks/fbprophet/VALE.ipynb
 # stocks/fbprophet/SHW.ipynb
+# stocks/fbprophet/APD.ipynb
+# stocks/fbprophet/FCX.ipynb
+# stocks/fbprophet/NEM.ipynb
+# stocks/fbprophet/SCCO.ipynb
+# stocks/fbprophet/DOW.ipynb
 # ```
 # 
 # 
@@ -54,6 +59,11 @@ print( IPython.sys_info() )
 # stocks/fbprophet/TMO.ipynb
 # stocks/fbprophet/HON.ipynb
 # stocks/fbprophet/BA.ipynb
+# stocks/fbprophet/RTX.ipynb
+# stocks/fbprophet/CAT.ipynb
+# stocks/fbprophet/AMAT.ipynb
+# stocks/fbprophet/DE.ipynb
+# stocks/fbprophet/LMT.ipynb
 # ```
 # 
 # 
@@ -67,6 +77,11 @@ print( IPython.sys_info() )
 # stocks/fbprophet/ABB.ipynb
 # stocks/fbprophet/AME.ipynb
 # stocks/fbprophet/FERG.ipynb
+# stocks/fbprophet/BLL.ipynb
+# stocks/fbprophet/CLX.ipynb
+# stocks/fbprophet/GNRC.ipynb
+# stocks/fbprophet/VTRS.ipynb
+# stocks/fbprophet/PLUG.ipynb
 # ```
 # 
 # 
@@ -80,6 +95,11 @@ print( IPython.sys_info() )
 # stocks/fbprophet/NKE.ipynb
 # stocks/fbprophet/PEP.ipynb
 # stocks/fbprophet/UL.ipynb
+# stocks/fbprophet/PM.ipynb
+# stocks/fbprophet/BUD.ipynb
+# stocks/fbprophet/SONY.ipynb
+# stocks/fbprophet/DEO.ipynb
+# stocks/fbprophet/EL.ipynb
 # ```
 # 
 # 
@@ -96,6 +116,8 @@ print( IPython.sys_info() )
 # stocks/fbprophet/CMCSA.ipynb
 # stocks/fbprophet/NFLX.ipynb
 # stocks/fbprophet/T.ipynb
+# stocks/fbprophet/MCD.ipynb
+# stocks/fbprophet/COST.ipynb
 # ```
 # 
 # 
@@ -109,6 +131,11 @@ print( IPython.sys_info() )
 # stocks/fbprophet/BBL.ipynb
 # stocks/fbprophet/TOT.ipynb
 # stocks/fbprophet/BP.ipynb
+# stocks/fbprophet/ENB.ipynb
+# stocks/fbprophet/PTR.ipynb
+# stocks/fbprophet/COP.ipynb
+# stocks/fbprophet/EQNR.ipynb
+# stocks/fbprophet/PBR.ipynb
 # ```
 # 
 # 
@@ -122,6 +149,11 @@ print( IPython.sys_info() )
 # stocks/fbprophet/WFC.ipynb
 # stocks/fbprophet/MS.ipynb
 # stocks/fbprophet/C.ipynb
+# stocks/fbprophet/HDB.ipynb
+# stocks/fbprophet/SCHW.ipynb
+# stocks/fbprophet/BLK.ipynb
+# stocks/fbprophet/HSBC.ipynb
+# stocks/fbprophet/AXP.ipynb
 # ```
 # 
 # 
@@ -153,6 +185,11 @@ print( IPython.sys_info() )
 # stocks/fbprophet/PYPL.ipynb
 # stocks/fbprophet/EDU.ipynb
 # stocks/fbprophet/PDD.ipynb
+# stocks/fbprophet/JD.ipynb
+# stocks/fbprophet/FIS.ipynb
+# stocks/fbprophet/ADP.ipynb
+# stocks/fbprophet/BAM.ipynb
+# stocks/fbprophet/NTES.ipynb
 # ```
 # 
 # 
@@ -166,6 +203,11 @@ print( IPython.sys_info() )
 # stocks/fbprophet/DUK.ipynb
 # stocks/fbprophet/SO.ipynb
 # stocks/fbprophet/D.ipynb
+# stocks/fbprophet/WM.ipynb
+# stocks/fbprophet/VOD.ipynb
+# stocks/fbprophet/EPD.ipynb
+# stocks/fbprophet/AMX.ipynb
+# stocks/fbprophet/AMOV.ipynb
 # ```
 # 
 # 
@@ -201,5 +243,10 @@ print( IPython.sys_info() )
 # stocks/fbprophet/BKNG.ipynb
 # stocks/fbprophet/FDX.ipynb
 # stocks/fbprophet/CSX.ipynb
+# stocks/fbprophet/NSC.ipynb
+# stocks/fbprophet/LUV.ipynb
+# stocks/fbprophet/ODFL.ipynb
+# stocks/fbprophet/DAL.ipynb
+# stocks/fbprophet/KSU.ipynb
 # ```
 # 
