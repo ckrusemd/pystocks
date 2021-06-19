@@ -874,17 +874,60 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;changepoint_prior_scale&#39;: 1, &#39;seasonality_prior_scale&#39;: 1.0, &#39;rmse&#39;: 1.1628776548900992}
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="nn">~/.local/lib/python3.9/site-packages/pandas_datareader/yahoo/daily.py</span> in <span class="ni">_read_one_data</span><span class="nt">(self, url, params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">156</span>             <span class="n">j</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">ptrn</span><span class="p">,</span> <span class="n">resp</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">DOTALL</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="ne">--&gt; </span><span class="mi">157</span>             <span class="n">data</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;context&quot;</span><span class="p">][</span><span class="s2">&quot;dispatcher&quot;</span><span class="p">][</span><span class="s2">&quot;stores&quot;</span><span class="p">][</span><span class="s2">&quot;HistoricalPriceStore&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">158</span>         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+
+<span class="ne">KeyError</span>: &#39;HistoricalPriceStore&#39;
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">RemoteDataError</span><span class="g g-Whitespace">                           </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mf">9461e2</span><span class="n">a80483</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">functions</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">collect_tune_and_predict</span><span class="p">(</span><span class="s1">&#39;TOT&#39;</span><span class="p">,</span><span class="n">n_ahead</span> <span class="o">=</span> <span class="mi">365</span><span class="p">)</span>
+
+<span class="nn">~/Dropbox/R/pystocks/pystocks/stocks/fbprophet/functions.py</span> in <span class="ni">collect_tune_and_predict</span><span class="nt">(item, n_ahead)</span>
+<span class="g g-Whitespace">     </span><span class="mi">67</span>                         <span class="p">}</span>
+<span class="g g-Whitespace">     </span><span class="mi">68</span>     <span class="c1"># Get Data</span>
+<span class="ne">---&gt; </span><span class="mi">69</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">DataReader</span><span class="p">(</span><span class="n">item</span><span class="p">,</span>  <span class="s2">&quot;yahoo&quot;</span><span class="p">,</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">1900</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+<span class="g g-Whitespace">     </span><span class="mi">70</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">71</span>     <span class="n">data</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;ds&#39;</span>
+
+<span class="nn">~/.local/lib/python3.9/site-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">197</span>                 <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">198</span>                     <span class="n">kwargs</span><span class="p">[</span><span class="n">new_arg_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_arg_value</span>
+<span class="ne">--&gt; </span><span class="mi">199</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">200</span> 
+<span class="g g-Whitespace">    </span><span class="mi">201</span>         <span class="k">return</span> <span class="n">cast</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">wrapper</span><span class="p">)</span>
+
+<span class="nn">~/.local/lib/python3.9/site-packages/pandas_datareader/data.py</span> in <span class="ni">DataReader</span><span class="nt">(name, data_source, start, end, retry_count, pause, session, api_key)</span>
+<span class="g g-Whitespace">    </span><span class="mi">374</span> 
+<span class="g g-Whitespace">    </span><span class="mi">375</span>     <span class="k">if</span> <span class="n">data_source</span> <span class="o">==</span> <span class="s2">&quot;yahoo&quot;</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">376</span>         <span class="k">return</span> <span class="n">YahooDailyReader</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">377</span>             <span class="n">symbols</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">378</span>             <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span>
+
+<span class="nn">~/.local/lib/python3.9/site-packages/pandas_datareader/base.py</span> in <span class="ni">read</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">251</span>         <span class="c1"># If a single symbol, (e.g., &#39;GOOG&#39;)</span>
+<span class="g g-Whitespace">    </span><span class="mi">252</span>         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">symbols</span><span class="p">,</span> <span class="p">(</span><span class="n">string_types</span><span class="p">,</span> <span class="nb">int</span><span class="p">)):</span>
+<span class="ne">--&gt; </span><span class="mi">253</span>             <span class="n">df</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_one_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_get_params</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">symbols</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">254</span>         <span class="c1"># Or multiple symbols, (e.g., [&#39;GOOG&#39;, &#39;AAPL&#39;, &#39;MSFT&#39;])</span>
+<span class="g g-Whitespace">    </span><span class="mi">255</span>         <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">symbols</span><span class="p">,</span> <span class="n">DataFrame</span><span class="p">):</span>
+
+<span class="nn">~/.local/lib/python3.9/site-packages/pandas_datareader/yahoo/daily.py</span> in <span class="ni">_read_one_data</span><span class="nt">(self, url, params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">158</span>         <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">159</span>             <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;No data fetched for symbol </span><span class="si">{}</span><span class="s2"> using </span><span class="si">{}</span><span class="s2">&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">160</span>             <span class="k">raise</span> <span class="n">RemoteDataError</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">161</span> 
+<span class="g g-Whitespace">    </span><span class="mi">162</span>         <span class="c1"># price data</span>
+
+<span class="ne">RemoteDataError</span>: No data fetched for symbol TOT using YahooDailyReader
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;fig1&#39;: &lt;Figure size 720x432 with 1 Axes&gt;,
- &#39;fig2&#39;: &lt;Figure size 648x648 with 3 Axes&gt;,
- &#39;fig3&#39;: &lt;Figure size 720x432 with 1 Axes&gt;}
-</pre></div>
-</div>
-<img alt="../../../_images/TOT_1_5.png" src="../../../_images/TOT_1_5.png" />
-<img alt="../../../_images/TOT_1_6.png" src="../../../_images/TOT_1_6.png" />
-<img alt="../../../_images/TOT_1_7.png" src="../../../_images/TOT_1_7.png" />
 </div>
 </div>
 </div>
