@@ -1,0 +1,1738 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>importing dependencies &#8212; PyStocks</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">PyStocks</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   PyStocks
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Basic Industries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BHP.html">
+   (BHP): BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/LIN.html">
+   (LIN): Linde plc Ordinary Share
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/RIO.html">
+   (RIO): Rio Tinto Plc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/VALE.html">
+   (VALE): VALE S.A.  American Depositary Shares Each Representing one common share
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/SHW.html">
+   (SHW): Sherwin-Williams Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/APD.html">
+   (APD): Air Products and Chemicals Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/FCX.html">
+   (FCX): Freeport-McMoRan Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/NEM.html">
+   (NEM): Newmont Corporation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/SCCO.html">
+   (SCCO): Southern Copper Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/DOW.html">
+   (DOW): Dow Inc. Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Capital Goods
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/TSLA.html">
+   (TSLA): Tesla Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/TM.html">
+   (TM): Toyota Motor Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/TMO.html">
+   (TMO): Thermo Fisher Scientific Inc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/HON.html">
+   (HON): Honeywell International Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BA.html">
+   (BA): Boeing Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/RTX.html">
+   (RTX): Raytheon Technologies Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/CAT.html">
+   (CAT): Caterpillar Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/AMAT.html">
+   (AMAT): Applied Materials Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/DE.html">
+   (DE): Deere &amp; Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/LMT.html">
+   (LMT): Lockheed Martin Corporation Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Consumer Durables
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/CSAN.html">
+   (CSAN): Cosan S.A. ADS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/GE.html">
+   (GE): General Electric Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/ABB.html">
+   (ABB): ABB Ltd Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/AME.html">
+   (AME): AMETEK Inc.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/FERG.html">
+   (FERG): Ferguson plc Ordinary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BLL.html">
+   (BLL): Ball Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/CLX.html">
+   (CLX): Clorox Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/GNRC.html">
+   (GNRC): Generac Holdlings Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/VTRS.html">
+   (VTRS): Viatris Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/PLUG.html">
+   (PLUG): Plug Power Inc. Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Consumer Non-Durables
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/PG.html">
+   (PG): Procter &amp; Gamble Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/KO.html">
+   (KO): Coca-Cola Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/NKE.html">
+   (NKE): Nike Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/PEP.html">
+   (PEP): PepsiCo Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/UL.html">
+   (UL): Unilever PLC Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/PM.html">
+   (PM): Philip Morris International Inc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BUD.html">
+   (BUD): Anheuser-Busch Inbev SA Sponsored ADR (Belgium)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/SONY.html">
+   (SONY): Sony Group Corporation American Depositary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/DEO.html">
+   (DEO): Diageo plc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/EL.html">
+   (EL): Estee Lauder Companies Inc. (The) Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Consumer Services
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/AMZN.html">
+   (AMZN): Amazon.com Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BABA.html">
+   (BABA): Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/WMT.html">
+   (WMT): Walmart Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/HD.html">
+   (HD): Home Depot Inc. (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/DIS.html">
+   (DIS): Walt Disney Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/CMCSA.html">
+   (CMCSA): Comcast Corporation Class A Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/NFLX.html">
+   (NFLX): Netflix Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/T.html">
+   (T): AT&amp;T Inc.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/MCD.html">
+   (MCD): McDonald’s Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/COST.html">
+   (COST): Costco Wholesale Corporation Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Energy
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/XOM.html">
+   (XOM): Exxon Mobil Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/CVX.html">
+   (CVX): Chevron Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BBL.html">
+   (BBL): BHP Group PlcSponsored ADR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/TOT.html">
+   (TOT): Total SE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BP.html">
+   (BP): BP p.l.c. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/ENB.html">
+   (ENB): Enbridge Inc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/PTR.html">
+   (PTR): PetroChina Company Limited Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/COP.html">
+   (COP): ConocoPhillips Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/EQNR.html">
+   (EQNR): Equinor ASA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/PBR.html">
+   (PBR): Petroleo Brasileiro S.A.- Petrobras Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Finance
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/JPM.html">
+   (JPM): JP Morgan Chase &amp; Co. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BAC.html">
+   (BAC): Bank of America Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/WFC.html">
+   (WFC): Wells Fargo &amp; Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/MS.html">
+   (MS): Morgan Stanley Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/C.html">
+   (C): Citigroup Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/HDB.html">
+   (HDB): HDFC Bank Limited Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/SCHW.html">
+   (SCHW): Charles Schwab Corporation (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BLK.html">
+   (BLK): BlackRock Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/HSBC.html">
+   (HSBC): HSBC Holdings plc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/AXP.html">
+   (AXP): American Express Company Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Health Care
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/JNJ.html">
+   (JNJ): Johnson &amp; Johnson Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/UNH.html">
+   (UNH): UnitedHealth Group Incorporated Common Stock (DE)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/PFE.html">
+   (PFE): Pfizer Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/ABT.html">
+   (ABT): Abbott Laboratories Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/ABBV.html">
+   (ABBV): AbbVie Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/NVS.html">
+   (NVS): Novartis AG Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/MRK.html">
+   (MRK): Merck &amp; Company Inc. Common Stock (new)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/LLY.html">
+   (LLY): Eli Lilly and Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/DHR.html">
+   (DHR): Danaher Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/NVO.html">
+   (NVO): Novo Nordisk A/S Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Miscellaneous
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/V.html">
+   (V): Visa Inc.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/MA.html">
+   (MA): Mastercard Incorporated Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/PYPL.html">
+   (PYPL): PayPal Holdings Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/EDU.html">
+   (EDU): New Oriental Education &amp; Technology Group Inc. Sponsored ADR representing 1 Ordinary Share (Cayman Islands)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/PDD.html">
+   (PDD): Pinduoduo Inc. American Depositary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/JD.html">
+   (JD): JD.com Inc. American Depositary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/FIS.html">
+   (FIS): Fidelity National Information Services Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/ADP.html">
+   (ADP): Automatic Data Processing Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BAM.html">
+   (BAM): Brookfield Asset Management Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/NTES.html">
+   (NTES): NetEase Inc. American Depositary Shares
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Public Utilities
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/TMUS.html">
+   (TMUS): T-Mobile US Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/NEE.html">
+   (NEE): NextEra Energy Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/DUK.html">
+   (DUK): Duke Energy Corporation (Holding Company) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/SO.html">
+   (SO): Southern Company (The) Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/D.html">
+   (D): Dominion Energy Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/WM.html">
+   (WM): Waste Management Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/VOD.html">
+   (VOD): Vodafone Group Plc American Depositary Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/EPD.html">
+   (EPD): Enterprise Products Partners L.P. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/AMX.html">
+   (AMX): America Movil S.A.B. de C.V. American Depository Receipt Series L
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/AMOV.html">
+   (AMOV): America Movil S.A.B. de C.V. Class A American Depositary Shares
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Technology
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/AAPL.html">
+   (AAPL): Apple Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/MSFT.html">
+   (MSFT): Microsoft Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/GOOG.html">
+   (GOOG): Alphabet Inc. Class C Capital Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/GOOGL.html">
+   (GOOGL): Alphabet Inc. Class A Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/FB.html">
+   (FB): Facebook Inc. Class A Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/TSM.html">
+   (TSM): Taiwan Semiconductor Manufacturing Company Ltd.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/NVDA.html">
+   (NVDA): NVIDIA Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/ASML.html">
+   (ASML): ASML Holding N.V. New York Registry Shares
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/ADBE.html">
+   (ADBE): Adobe Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/INTC.html">
+   (INTC): Intel Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/ORCL.html">
+   (ORCL): Oracle Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/CSCO.html">
+   (CSCO): Cisco Systems Inc. Common Stock (DE)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/CRM.html">
+   (CRM): Salesforce.com Inc Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/AVGO.html">
+   (AVGO): Broadcom Inc. Common Stock
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Transportation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/UPS.html">
+   (UPS): United Parcel Service Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/UNP.html">
+   (UNP): Union Pacific Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/BKNG.html">
+   (BKNG): Booking Holdings Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/FDX.html">
+   (FDX): FedEx Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/CSX.html">
+   (CSX): CSX Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/NSC.html">
+   (NSC): Norfolk Southern Corporation Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/LUV.html">
+   (LUV): Southwest Airlines Company Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/ODFL.html">
+   (ODFL): Old Dominion Freight Line Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/DAL.html">
+   (DAL): Delta Air Lines Inc. Common Stock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fbprophet/KSU.html">
+   (KSU): Kansas City Southern Common Stock
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/pystocks/stocks/methods/google stock prediction [LSTM].ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ckrusemd/pystocks/master?urlpath=tree/pystocks/stocks/methods/google stock prediction [LSTM].ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   importing dependencies
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#importing-the-training-data-of-goog-historical-prices">
+     importing the training data of GOOG historical prices
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#choosing-the-close-column">
+   choosing the close column
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scaling-the-values-in-the-range-of-0-1-for-best-preformances">
+   scaling the values in the range of 0-1 for best preformances
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preparing-the-data-for-lstm">
+   preparing the data for LSTM
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-the-model">
+   building the model
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ploting-the-training-loss">
+     ploting the training loss
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#testing-the-model-on-new-data">
+     testing the model on new data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ploting-the-results">
+     ploting the results
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="importing-dependencies">
+<h1>importing dependencies<a class="headerlink" href="#importing-dependencies" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span><span class="n">LSTM</span><span class="p">,</span><span class="n">Dropout</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">      </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">f170c272ea3e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span><span class="n">LSTM</span><span class="p">,</span><span class="n">Dropout</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;sklearn&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="importing-the-training-data-of-goog-historical-prices">
+<h2>importing the training data of GOOG historical prices<a class="headerlink" href="#importing-the-training-data-of-goog-historical-prices" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;trainData.csv&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 1258 entries, 0 to 1257
+Data columns (total 6 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   Date    1258 non-null   object 
+ 1   Open    1258 non-null   float64
+ 2   High    1258 non-null   float64
+ 3   Low     1258 non-null   float64
+ 4   Close   1258 non-null   object 
+ 5   Volume  1258 non-null   object 
+dtypes: float64(3), object(3)
+memory usage: 59.1+ KB
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="choosing-the-close-column">
+<h1>choosing the close column<a class="headerlink" href="#choosing-the-close-column" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;Close&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">,</span><span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span> <span class="c1">#turning the Close column to numeric</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span> <span class="c1">#romeving the NA values</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Volume</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1/3/2012</td>
+      <td>325.25</td>
+      <td>332.83</td>
+      <td>324.97</td>
+      <td>663.59</td>
+      <td>7,380,500</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1/4/2012</td>
+      <td>331.27</td>
+      <td>333.87</td>
+      <td>329.08</td>
+      <td>666.45</td>
+      <td>5,749,400</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1/5/2012</td>
+      <td>329.83</td>
+      <td>330.75</td>
+      <td>326.89</td>
+      <td>657.21</td>
+      <td>6,590,300</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1/6/2012</td>
+      <td>328.34</td>
+      <td>328.77</td>
+      <td>323.68</td>
+      <td>648.24</td>
+      <td>5,405,900</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1/9/2012</td>
+      <td>322.04</td>
+      <td>322.29</td>
+      <td>309.46</td>
+      <td>620.76</td>
+      <td>11,688,800</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1253</th>
+      <td>12/23/2016</td>
+      <td>790.90</td>
+      <td>792.74</td>
+      <td>787.28</td>
+      <td>789.91</td>
+      <td>623,400</td>
+    </tr>
+    <tr>
+      <th>1254</th>
+      <td>12/27/2016</td>
+      <td>790.68</td>
+      <td>797.86</td>
+      <td>787.66</td>
+      <td>791.55</td>
+      <td>789,100</td>
+    </tr>
+    <tr>
+      <th>1255</th>
+      <td>12/28/2016</td>
+      <td>793.70</td>
+      <td>794.23</td>
+      <td>783.20</td>
+      <td>785.05</td>
+      <td>1,153,800</td>
+    </tr>
+    <tr>
+      <th>1256</th>
+      <td>12/29/2016</td>
+      <td>783.33</td>
+      <td>785.93</td>
+      <td>778.92</td>
+      <td>782.79</td>
+      <td>744,300</td>
+    </tr>
+    <tr>
+      <th>1257</th>
+      <td>12/30/2016</td>
+      <td>782.75</td>
+      <td>782.78</td>
+      <td>770.41</td>
+      <td>771.82</td>
+      <td>1,770,000</td>
+    </tr>
+  </tbody>
+</table>
+<p>1149 rows × 6 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">4</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Close</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>663.59</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>666.45</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>657.21</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>648.24</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>620.76</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1253</th>
+      <td>789.91</td>
+    </tr>
+    <tr>
+      <th>1254</th>
+      <td>791.55</td>
+    </tr>
+    <tr>
+      <th>1255</th>
+      <td>785.05</td>
+    </tr>
+    <tr>
+      <th>1256</th>
+      <td>782.79</td>
+    </tr>
+    <tr>
+      <th>1257</th>
+      <td>771.82</td>
+    </tr>
+  </tbody>
+</table>
+<p>1149 rows × 1 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">trainData</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">4</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="c1">#selecting only the closing prices for training</span>
+<span class="n">trainData</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[663.59],
+       [666.45],
+       [657.21],
+       ...,
+       [785.05],
+       [782.79],
+       [771.82]])
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="scaling-the-values-in-the-range-of-0-1-for-best-preformances">
+<h1>scaling the values in the range of 0-1 for best preformances<a class="headerlink" href="#scaling-the-values-in-the-range-of-0-1-for-best-preformances" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sc</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">trainData</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">trainData</span><span class="p">)</span>
+<span class="n">trainData</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">7</span><span class="o">-</span><span class="mi">54</span><span class="n">ac370a2e8b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">sc</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">trainData</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">trainData</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">trainData</span><span class="o">.</span><span class="n">shape</span>
+
+<span class="ne">NameError</span>: name &#39;MinMaxScaler&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="preparing-the-data-for-lstm">
+<h1>preparing the data for LSTM<a class="headerlink" href="#preparing-the-data-for-lstm" title="Permalink to this headline">¶</a></h1>
+<p>since its a time series problem we took 60 as timestep for our learning : given <em>60 closing values</em> as an input data the <em>61st value</em> is our output</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">y_train</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">60</span><span class="p">,</span><span class="mi">1149</span><span class="p">):</span> <span class="c1">#60 : timestep // 1149 : length of the data</span>
+    <span class="n">X_train</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">trainData</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">60</span><span class="p">:</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span> 
+    <span class="n">y_train</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">trainData</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X_train</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[663.59, 666.45, 657.21, ..., 647.55, 645.25, 653.96],
+       [666.45, 657.21, 648.24, ..., 645.25, 653.96, 646.63],
+       [657.21, 648.24, 620.76, ..., 653.96, 646.63, 639.48],
+       ...,
+       [772.56, 776.43, 776.47, ..., 791.26, 789.91, 791.55],
+       [776.43, 776.47, 776.86, ..., 789.91, 791.55, 785.05],
+       [776.47, 776.86, 775.08, ..., 791.55, 785.05, 782.79]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_train</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([646.63, 639.48, 645.15, ..., 785.05, 782.79, 771.82])
+</pre></div>
+</div>
+</div>
+</div>
+<p>ps : LSTM take a 3D tensor (seq_len,timestep,batch_size)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[663.59, 666.45, 657.21, ..., 647.55, 645.25, 653.96],
+       [666.45, 657.21, 648.24, ..., 645.25, 653.96, 646.63],
+       [657.21, 648.24, 620.76, ..., 653.96, 646.63, 639.48],
+       ...,
+       [772.56, 776.43, 776.47, ..., 791.26, 789.91, 791.55],
+       [776.43, 776.47, 776.86, ..., 789.91, 791.55, 785.05],
+       [776.47, 776.86, 775.08, ..., 791.55, 785.05, 782.79]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X_train</span><span class="p">,(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#adding the batch_size axis</span>
+<span class="n">X_train</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1089, 60, 1)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="building-the-model">
+<h1>building the model<a class="headerlink" href="#building-the-model" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">input_shape</span> <span class="o">=</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">1</span><span class="p">)))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">False</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span> <span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span><span class="n">loss</span><span class="o">=</span><span class="s2">&quot;mean_squared_error&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">13</span><span class="o">-</span><span class="n">c334925316c7</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">input_shape</span> <span class="o">=</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">1</span><span class="p">)))</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> 
+
+<span class="ne">NameError</span>: name &#39;Sequential&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hist</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">14</span><span class="o">-</span><span class="mi">0</span><span class="n">cbf3479c800</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">hist</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;model&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ploting-the-training-loss">
+<h2>ploting the training loss<a class="headerlink" href="#ploting-the-training-loss" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">hist</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;loss&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;model loss&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;loss&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;epoch&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">15</span><span class="o">-</span><span class="n">b31b14ea921b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">hist</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;loss&#39;</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;model loss&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;loss&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;epoch&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;hist&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="testing-the-model-on-new-data">
+<h2>testing the model on new data<a class="headerlink" href="#testing-the-model-on-new-data" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inputClosing_scaled</span><span class="p">))</span>
+<span class="n">inputClosing_scaled</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">16</span><span class="o">-</span><span class="mi">9506</span><span class="n">f7d93ec4</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inputClosing_scaled</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">inputClosing_scaled</span>
+
+<span class="ne">NameError</span>: name &#39;inputClosing_scaled&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">testData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;GOOG.csv&#39;</span><span class="p">)</span> <span class="c1">#importing the test data</span>
+<span class="n">testData</span><span class="p">[</span><span class="s2">&quot;Close&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">testData</span><span class="o">.</span><span class="n">Close</span><span class="p">,</span><span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span> <span class="c1">#turning the close column to numerical type</span>
+<span class="n">testData</span> <span class="o">=</span> <span class="n">testData</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span> <span class="c1">#droping the NA values</span>
+<span class="n">testData</span> <span class="o">=</span> <span class="n">testData</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">4</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="c1">#selecting the closing prices for testing</span>
+<span class="n">y_test</span> <span class="o">=</span> <span class="n">testData</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">60</span><span class="p">:,</span><span class="mi">0</span><span class="p">:]</span><span class="o">.</span><span class="n">values</span> <span class="c1">#selecting the labels </span>
+<span class="n">y_test</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1055.810059],
+       [1093.390015],
+       [1082.400024],
+       [1066.150024],
+       [1038.630005],
+       [1036.050049],
+       [1043.660034],
+       [1064.709961],
+       [1061.48999 ],
+       [1020.      ]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#input array for the model</span>
+<span class="n">inputClosing</span> <span class="o">=</span> <span class="n">testData</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:]</span><span class="o">.</span><span class="n">values</span> 
+<span class="n">inputClosing_scaled</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">inputClosing</span><span class="p">)</span>
+<span class="n">inputClosing_scaled</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">18</span><span class="o">-</span><span class="mi">605</span><span class="n">f96470fa5</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#input array for the model</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">inputClosing</span> <span class="o">=</span> <span class="n">testData</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:]</span><span class="o">.</span><span class="n">values</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">inputClosing_scaled</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">inputClosing</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">inputClosing_scaled</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+
+<span class="ne">NameError</span>: name &#39;sc&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputClosing_scaled</span><span class="o">.</span><span class="n">shape</span>
+<span class="n">X_test</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">testData</span><span class="p">)</span>
+<span class="n">testData</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">19</span><span class="o">-</span><span class="n">fdbe421b941e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">inputClosing_scaled</span><span class="o">.</span><span class="n">shape</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">X_test</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">testData</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">testData</span>
+
+<span class="ne">NameError</span>: name &#39;inputClosing_scaled&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">length</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">20</span><span class="o">-</span><span class="mi">29448</span><span class="n">fdbe8f2</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">length</span>
+
+<span class="ne">NameError</span>: name &#39;length&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">timestep</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">21</span><span class="o">-</span><span class="n">d9d9bdc5aa97</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">timestep</span>
+
+<span class="ne">NameError</span>: name &#39;timestep&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">timestep</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">timestep</span><span class="p">,</span><span class="n">length</span><span class="p">):</span> <span class="c1">#doing the same preivous preprocessing </span>
+    <span class="n">X_test</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inputClosing_scaled</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">timestep</span><span class="p">:</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X_test</span><span class="p">))</span>
+<span class="n">X_test</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">22</span><span class="o">-</span><span class="n">b541c0bfaf0a</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">timestep</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">timestep</span><span class="p">,</span><span class="n">length</span><span class="p">):</span> <span class="c1">#doing the same preivous preprocessing</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">X_test</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inputClosing_scaled</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">timestep</span><span class="p">:</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X_test</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">X_test</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="ne">NameError</span>: name &#39;length&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">X_test</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">23</span><span class="o">-</span><span class="mi">033</span><span class="n">c993cc812</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">X_test</span>
+
+<span class="ne">NameError</span>: name &#39;X_test&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X_test</span><span class="p">,(</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">X_test</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">24</span><span class="o">-</span><span class="n">c0a14a3e86b2</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X_test</span><span class="p">,(</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">1</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">X_test</span>
+
+<span class="ne">NameError</span>: name &#39;X_test&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> <span class="c1">#predicting the new values</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">25</span><span class="o">-</span><span class="n">ded164db49b9</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> <span class="c1">#predicting the new values</span>
+
+<span class="ne">NameError</span>: name &#39;model&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predicted_price</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">y_pred</span><span class="p">)</span> <span class="c1">#inversing the scaling transformation for ploting </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">26</span><span class="o">-</span><span class="mi">805</span><span class="n">cd82d0ce2</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">predicted_price</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">y_pred</span><span class="p">)</span> <span class="c1">#inversing the scaling transformation for ploting</span>
+
+<span class="ne">NameError</span>: name &#39;sc&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ploting-the-results">
+<h2>ploting the results<a class="headerlink" href="#ploting-the-results" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Actual Stock Price&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">predicted_price</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Predicted Stock Price&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;GOOG stock price prediction&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Stock Price&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">----------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">27</span><span class="o">-</span><span class="mi">35</span><span class="n">b03ce1528b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Actual Stock Price&#39;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">predicted_price</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Predicted Stock Price&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;GOOG stock price prediction&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Stock Price&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;predicted_price&#39; is not defined
+</pre></div>
+</div>
+<img alt="../../../_images/google stock prediction [LSTM]_36_1.png" src="../../../_images/google stock prediction [LSTM]_36_1.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./pystocks/stocks/methods"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Christian Kruse<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
