@@ -13,3 +13,4 @@ pandas
 shap
 keras-tqdm
 tensorflow_datasets
+yfinance
