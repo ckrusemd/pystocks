@@ -15,7 +15,9 @@ from matplotlib.dates import (
 )
 from matplotlib.ticker import FuncFormatter
 from datetime import datetime
-from pandas_datareader.data import DataReader
+from pandas_datareader import data as pdr
+import yfinance as yfin
+yfin.pdr_override()
 import os
 import sys
 
@@ -66,7 +68,8 @@ def collect_tune_and_predict(item,n_ahead = 365):
             'seasonality_prior_scale': [1.0]
                         }
     # Get Data
-    data = DataReader(item,  "yahoo", datetime(1900,1,1), datetime.now())
+    data = pdr.get_data_yahoo(item,  start = "1900-01-01", end = datetime.now())
+    #data = DataReader(item,  "yahoo", datetime(1900,1,1), datetime.now())
     data = pd.DataFrame(data)
     data.index.name = 'ds'
     data.reset_index(inplace=True)
